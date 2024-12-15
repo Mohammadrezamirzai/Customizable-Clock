@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Clock</title>
+    <script src="./script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <canvas class="mx-auto" id="canvas" width="500" height="400"></canvas>
+    <div class="flex flex-col item-start justify-center bg-gray-200">
+      <h3 class="text-2xl text-center">Clock Style</h3>
+      <form action=" " class="flex flex-col items-center mt-4">
+        <div class="mb-3">
+          <label for="face-color" class="text-xl font-bold pr-8 text-left"
+            >Face Color</label
+          ><input type="color" id="face-color" value="#f4f4f4" />
+        </div>
+        <div class="mb-3">
+          <label for="border-color" class="text-xl font-bold pr-8 text-left"
+            >Border Color</label
+          ><input type="color" id="border-color" value="#800000" />
+        </div>
+        <div class="mb-3">
+          <label for="line-color" class="text-xl font-bold pr-8 text-left"
+            >Number Line Color</label
+          ><input type="color" id="line-color" value="#000000" />
+        </div>
+        <div class="mb-3">
+          <label for="hour-color" class="text-xl font-bold pr-8 text-left"
+            >Hour Hand Color</label
+          ><input type="color" id="hour-color" value="#800000" />
+        </div>
+        <div class="mb-3">
+          <label for="minute-color" class="text-xl font-bold pr-8 text-left"
+            >Minute Hand Color</label
+          ><input type="color" id="minute-color" value="#AF3725" />
+        </div>
+        <div class="mb-3">
+          <label for="second-color" class="text-xl font-bold pr-8 text-left"
+            >Second Hand Color</label
+          ><input type="color" id="second-color" value="#BF7832" />
+        </div>
+        <button
+        id="save-btn"
+          class="bg-black px-4 py-2 rounded-md text-white my-2 shadow-md hover:bg-blue-800 hover:-translate-y-0.5">
+          Save As Image
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
